@@ -1,0 +1,126 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="card-checkout">
+    <div class="card-checkout-header">
+      <p>Nintendo Switch</p>
+    </div>
+    <div class="card-checkout-content">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4 class="d-flex justify-content-center align-items-center" style="border-right: 1px solid #f1f1f1;">
+            <img src="assets/imgs/p1.jpg" alt="">
+          </ion-col>
+          <ion-col col-8>
+            <ion-row>
+              <ion-col col-3>
+                <h3>Qtd.</h3>
+              </ion-col>
+              <ion-col col>
+                <h3 class="text-end">1</h3>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <h3>Valor</h3>
+              </ion-col>
+              <ion-col col>
+                <h3 class="text-end">R$ 2.000,00</h3>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-3>
+                <h3>Frete</h3>
+              </ion-col>
+              <ion-col col>
+                <h3 class="text-end">R$ 150,00</h3>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col>
+                <button ion-button round block small>
+                  <ion-icon name="help-circle"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col col>
+                <button ion-button color="danger" round block small>
+                  <ion-icon name="trash"></ion-icon>
+                </button>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <hr>
+  <div class="card-checkout checkout-info">
+    <div class="checkout-info">
+      <ion-grid>
+        <ion-row class="border-botton">
+          <ion-col col>
+            <h3>Subtotal</h3>
+          </ion-col>
+          <ion-col col>
+            <h3 class="text-end">R$ 2.000,00</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row class="border-botton">
+          <ion-col col>
+            <h3>Frete</h3>
+          </ion-col>
+          <ion-col col>
+            <h3 class="text-end">R$ 150,00</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row class="border-botton">
+          <ion-col col>
+            <h3>Taxas (Routefy)</h3>
+          </ion-col>
+          <ion-col col>
+            <h3 class="text-end">R$ 70,00</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col>
+            <h3 class="font-bold">Total</h3>
+          </ion-col>
+          <ion-col col>
+            <h3 class="text-end font-bold">R$ 3.020,00</h3>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+  <hr>
+  <div class="card-checkout checkout-info-city">
+    <ion-grid>
+      <ion-row>
+        <ion-col col class="text-end d-flex justify-content-center align-items-center">
+          <h3>Canadá</h3>
+        </ion-col>
+        <ion-col col-3 class="text-center d-flex justify-content-center align-items-center">
+          <ion-icon name="arrow-round-forward" class="d-flex justify-content-center align-items-center icon-city"></ion-icon>
+        </ion-col>
+        <ion-col col class="text-end d-flex justify-content-center align-items-center">
+          <h3>Brasil</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <hr>
+  <button ion-button full (click)='fecharAcordo()' >Fechar Acordo</button>
+</ion-content>

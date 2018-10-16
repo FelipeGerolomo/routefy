@@ -1,11 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Checkbox } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ProdutoPage } from '../pages/produto/produto';
+import { CheckoutPage } from '../pages/checkout/checkout';
+import { CheckoutSucessoPage } from '../pages/checkout-sucesso/checkout-sucesso';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +15,7 @@ import { ProdutoPage } from '../pages/produto/produto';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = CheckoutSucessoPage;
 
   pages: Array<{title: string, component: any}>;
 

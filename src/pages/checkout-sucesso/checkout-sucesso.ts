@@ -1,29 +1,29 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { CheckoutPage } from '../checkout/checkout';
+import { HomePage } from '../home/home';
 
 /**
- * Generated class for the ProdutoPage page.
+ * Generated class for the CheckoutSucessoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-produto',
-  templateUrl: 'produto.html',
+  selector: 'page-checkout-sucesso',
+  templateUrl: 'checkout-sucesso.html',
 })
-export class ProdutoPage {
+export class CheckoutSucessoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProdutoPage');
+    console.log('ionViewDidLoad CheckoutSucessoPage');
   }
 
-  goToCheckout() {
-    this.navCtrl.push(CheckoutPage)
+  goToHome() {
+    this.navCtrl.setRoot(HomePage)
   }
 
 }
